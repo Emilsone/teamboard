@@ -27,6 +27,9 @@
                 </th>
               </tr>
             </thead>
+
+
+
             <tbody
               class="text-gray-700"
               v-for="(link, index) in links"
