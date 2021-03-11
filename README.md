@@ -1,4 +1,4 @@
-# client
+# Trackee
 
 ## Project setup
 ```
