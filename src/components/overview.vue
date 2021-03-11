@@ -1,5 +1,5 @@
 <template>
-  <div class="">
+  <div class="bg-back">
 <TrackCard />
 <TeamCard />
 <TeamData />
@@ -18,6 +18,8 @@ export default {
 };
 </script>
 
-<style scoped>
+<style >
+
 
 </style>
+

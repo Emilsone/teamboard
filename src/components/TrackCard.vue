@@ -39,4 +39,7 @@ export default {
 	name:'TrackCard'
 }
 </script>
+<style>
+
+</style>
 
