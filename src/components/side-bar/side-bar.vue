@@ -11,7 +11,7 @@
 
     <div
       :class="isOpen ? 'translate-x-0 ease-out' : '-translate-x-full ease-in'"
-      class="fixed z-30 inset-y-0 left-0 w-64 transition duration-300 transform bg-gray-900 overflow-y-auto lg:translate-x-0 lg:static lg:inset-0"
+      class="fixed z-30 inset-y-0 left-0 w-64 transition duration-300 transform bg-color overflow-y-auto lg:translate-x-0 lg:static lg:inset-0"
     >
       <div class="flex items-center justify-center mt-8">
         <div class="flex items-center">
@@ -91,8 +91,8 @@
       
 
        <div class="p-6">
-            <h2 class="font-semibold py-2 mt-5  text-white  flex items-center space-between">
-               <span class="mr-5">Categories </span> <i class="fa fa-plus ml-4"></i> 
+            <h2 class="font-semibold py-2 mt-5   text-white  flex items-center space-between">
+               <span class="mr-5">Categories </span> <i class="fa fa-plus ml-12"></i> 
             </h2>
         </div>
 
@@ -130,22 +130,7 @@ export default {
 </script>
 
 <style scoped>
-.admin___heading {
-  padding: 20px 30px;
-  color: white;
-  font-weight: bold;
-  font-size: 25px;
-}
-.premium____section h2 {
-  padding: 15px 20px;
-  color: white;
-  font-weight: bold;
-  font-size: 17px;
-  background-color: #1947ee;
-}
-.premium____section {
-  margin-top: 4.9rem;
-}
+
 .cta-btn {
   color: #3d68ff;
 }
@@ -159,7 +144,7 @@ li {
 }
 
 a {
-  padding: 25px 0px;
+  padding: 18px 0px;
   display: block;
   text-decoration: none;
   color: white;
@@ -168,5 +153,8 @@ a {
 
 a:hover {
   background-color: #1947ee;
+}
+.bg-color{
+background-color: #001DF5
 }
 </style>

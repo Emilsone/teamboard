@@ -50,9 +50,10 @@
 						<div class="flex-shrink-0 h-10 w-10">
 							<img
 							class="h-10 w-10 rounded-full"
-							src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
-							alt=""
+							:src="u.image"
+							
 							/>
+                           
 						</div>
 
 						<div class="ml-4">
@@ -112,51 +113,51 @@ export default {
   name: "TeamData",
   data() {
     return {
+  
       users: [
         {
-          name: "khgj",
-          teamcat: "2020-10-21T12:43:06.612Z",
-          team: "www.google.com",
+          name: "Tom Chike",
+          teamcat: "Bussiness Team",
+          team: "Digital Marketing",
           th: " 3:45 of 6h",
           hr: "$80.00",
-          income: "$80.00"
+          income: "$80.00",
+          image: 'http://s8.pdfconvertonline.com/convert/p3r68-cdx67/tp7z8-5t6ya.png',
+          
         },
         {
-          name: "khgj",
-          teamcat: "2020-10-21T12:43:06.612Z",
-          team: "www.google.com",
+          name: "Edidiong Udoh",
+          teamcat: "Design Team",
+          team: "UI/Ux Design",
           th: " 3:45 of 6h",
           hr: "$80.00",
-          income: "$80.00"
+          income: "$80.00",
+          image: 'http://s8.pdfconvertonline.com/convert/p3r68-cdx67/rqt66-1ml9x.png',
         },
         {
-          name: "khgj",
-          teamcat: "2020-10-21T12:43:06.612Z",
-          team: "www.google.com",
+          name: "Umaru Usman",
+          teamcat: "Development Team",
+          team: "Web Developer",
           th: " 3:45 of 6h",
           hr: "$80.00",
-          income: "$80.00"
+          income: "$80.00",
+          image: 'http://s8.pdfconvertonline.com/convert/p3r68-cdx67/a7tti-0z0xw.png',
         },
         {
-          name: "khgj",
-          teamcat: "2020-10-21T12:43:06.612Z",
-          team: "www.google.com",
+          name: "Mabel Udom",
+          teamcat: "Management Team",
+          team: "Management",
           th: " 3:45 of 6h",
           hr: "$80.00",
-          income: "$80.00"
+          income: "$80.00",
+          image: 'http://s8.pdfconvertonline.com/convert/p3r68-cdx67/2nq3q-b3pyl.png',
         }
-      ]
+      ],
+    
     };
   }
 
-  // data(){
-  // name: "John Doe",
-  // 	email: "john@example.com",
-  // 	title: "Software Engineer",
-  // 	title2: "Web dev",
-  // 	status: "Active",
-  // 	role: "Owner",
-  // }
+
 };
 </script>
 
