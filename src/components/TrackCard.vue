@@ -18,28 +18,49 @@
      
 
       <div class="w-full mt-6 px-6 sm:w-1/2 xl:w-1/3 xl:mt-0 h-64">
-        <div class="flex items-center px-5 py-6 shadow-sm rounded-md bg-white h-full">
+        <div class="flex items-center  shadow-sm rounded-md bg-white h-full">
 
-          <div class="mx-5 md:mx-0">
-           <a href="#" class="py-3">Bussiness Team</a>
-            <h4 class="text-xl font-semibold text-gray-700">
-            Web Development
-            </h4>
-            <p class="text-gray-500 text-sm">A great team of digital marketers</p>
-          </div>
-          <div class="p-3 rounded-full bg-pink-600 bg-opacity-75">
-          </div>
+          <!-- <div class="mx-5 md:mx-0"> -->
+           <PieChart
+            style="width:60%"
+            class="mx-12"
+			:chartdata="dataCollection"
+			:options="chartOptions"
+      />
+          <!-- </div> -->
         </div>
       </div>
     </div>
    </section>
 </template>
 <script>
+import PieChart from "./chart/pie.js";
 export default {
-	name:'TrackCard'
-}
+  name: "TrackCard",
+  components: { PieChart },
+  data() {
+    return {
+      chartOptions: {
+        responsive: true,
+        maintainAspectRatio: false,
+        legend: {
+          position: "bottom"
+        },
+        cutoutPercentage: 55
+      },
+      dataCollection: {
+        labels: ["One", "Two", "Three"],
+        datasets: [
+          {
+            data: [70, 50, 60],
+            backgroundColor: ["#B71C1C", "#E53935", "#E57373"]
+          }
+        ]
+      }
+    };
+  }
+};
 </script>
 <style>
-
 </style>
 
