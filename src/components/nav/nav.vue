@@ -4,7 +4,7 @@
   >
     <div class="flex items-center">
       <button
-        @click="isOpen = true"
+        @click="toggleNav()"
         class="text-gray-500 focus:outline-none lg:hidden"
       >
         <svg
@@ -113,18 +113,10 @@
 
 export default {
   name: "Nav",
-  //   computed: {
-  //     ...mapState(["sideBarOpen"]),
-  //   },
-  //   data() {
-  //     return {
-  //       dropDownOpen: false,
-  //     };
-  //   },
-  //   methods: {
-  //     toggleSidebar() {
-  //       this.$store.dispatch("toggleSidebar");
-  //     },
-  //   },
+    methods: {
+    toggleNav () {
+      this.$parent.$emit('toggleNav')
+    }
+  }
 };
 </script>

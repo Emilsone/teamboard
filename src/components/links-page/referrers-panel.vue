@@ -14,7 +14,7 @@
         </ul>
       </div>
       <PieChart
-        class="p-3 ml-3 shadow"
+        class=" shadow"
         style="width: 60%; background-color: #fff; border-radius: 6px;"
         :chartdata="dataCollection"
         :options="chartOptions"

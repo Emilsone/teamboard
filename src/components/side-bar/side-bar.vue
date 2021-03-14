@@ -3,8 +3,7 @@
  <div class="flex">
     <!-- Backdrop -->
     <div
-      :class="isOpen ? 'block' : 'hidden'"
-      @click="isOpen = false"
+      :class="{ active: active}"
       class="fixed z-20 inset-0 bg-black opacity-50 transition-opacity lg:hidden"
     ></div>
     <!-- End Backdrop -->
@@ -45,7 +44,7 @@
       
 
        <div class="p-6">
-            <button class="w-full bg-white cta-btn font-semibold py-2 mt-5 rounded-br-lg rounded-bl-lg rounded-tr-lg shadow-lg hover:shadow-xl hover:bg-gray-300 flex items-center justify-center">
+            <button class="w-full cta-btn font-semibold py-2 mt-5  shadow-xl hover:shadow-xl  flex items-center justify-center">
                 <i class="fa fa-plus mr-3"></i> Create New Team
             </button>
         </div>
@@ -125,14 +124,25 @@
 
 <script>
 export default {
-  name: "Side-Bar"
+  name: "Side-Bar",
+  data() {
+    return {
+      active: true
+    };
+  },
+  mounted() {
+    this.$parent.$on("toggleNav", () => {
+      console.log("received");
+      this.active = !this.active;
+    });
+  }
 };
 </script>
 
 <style scoped>
-
 .cta-btn {
-  color: #3d68ff;
+  color: white;	
+  border-style: dotted;
 }
 nav {
   padding: 7px 0;
@@ -154,7 +164,7 @@ a {
 a:hover {
   background-color: #1947ee;
 }
-.bg-color{
-background-color: #001DF5
+.bg-color {
+  background-color: #001df5;
 }
 </style>
