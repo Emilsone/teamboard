@@ -4,7 +4,7 @@
   >
     <div class="flex items-center">
       <button
-        @click="toggleNav()"
+        
         class="text-gray-500 focus:outline-none lg:hidden"
       >
         <svg
@@ -67,25 +67,24 @@
 
       <div class="relative">
         <button
-          @click="dropdownOpen = !dropdownOpen"
+         
           class="relative z-10 block h-8 w-8 rounded-full overflow-hidden shadow focus:outline-none"
         >
           <img
             class="h-full w-full object-cover "
-            src="https://images.unsplash.com/photo-1528892952291-009c663ce843?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=296&q=80"
+            src="@/assets/user/ben.png"
             alt="Your avatar"
           />
         </button>
 
         <div
-          v-show="dropdownOpen"
-          @click="dropdownOpen = false"
+       
           class="fixed inset-0 h-full w-full z-10"
         ></div>
 
         <div
-          v-show="dropdownOpen"
-          class="absolute right-0 mt-2 py-2 w-48 bg-white rounded-md shadow-xl z-20"
+         
+          class="hidden absolute right-0 mt-2 py-2 w-48 bg-white rounded-md shadow-xl z-20"
         >
           <a
             href="#"
@@ -109,14 +108,16 @@
 </template>
 
 <script>
-// import { mapState } from "vuex";
+
 
 export default {
   name: "Nav",
-    methods: {
-    toggleNav () {
-      this.$parent.$emit('toggleNav')
-    }
-  }
+// 	data(){
+   
+// 	},
+//     methods: {
+   
+  
+//    }
 };
 </script>
