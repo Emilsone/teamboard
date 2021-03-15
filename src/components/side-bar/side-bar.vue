@@ -3,14 +3,14 @@
  <div class="flex">
     <!-- Backdrop -->
     <div
-      :class="{ active: active}"
+      
       class="fixed z-20 inset-0 bg-black opacity-50 transition-opacity lg:hidden"
     ></div>
     <!-- End Backdrop -->
 
     <div
       :class="isOpen ? 'translate-x-0 ease-out' : '-translate-x-full ease-in'"
-      class="fixed z-30 inset-y-0 left-0 w-64 transition duration-300 transform bg-color overflow-y-auto lg:translate-x-0 lg:static lg:inset-0"
+      class="fixed z-30 inset-y-0 left-0 w-64 transition duration-300 transform bg-color overflow-y-auto  lg:translate-x-0 lg:static lg:inset-0"
     >
       <div class="flex items-center justify-center mt-8">
         <div class="flex items-center">
@@ -51,12 +51,12 @@
 
       <router-link to="/overview"
         ><li>
-          <i class="fa fa-tachometer px-2" aria-hidden="true"></i> Dashboard
+          <i class="fa fa-home px-2" aria-hidden="true"></i>Dashboard
         </li></router-link
       >
-      <router-link to="/links"
+      <router-link to="/teampage"
         ><li>
-          <i class="fa fa-link px-2" aria-hidden="true"></i> All Team
+          <i class="fa fa-users px-2" aria-hidden="true"></i> All Team
         </li></router-link
       >
       <router-link to="/manage"
@@ -66,7 +66,7 @@
       >
       <router-link to="/personal"
         ><li>
-          <i class="fa fa-user px-2" aria-hidden="true"></i> Calendar
+          <i class="fa fa-calendar px-2" aria-hidden="true"></i>Calendar
         </li></router-link
       >
 
@@ -125,17 +125,8 @@
 <script>
 export default {
   name: "Side-Bar",
-  data() {
-    return {
-      active: true
-    };
-  },
-  mounted() {
-    this.$parent.$on("toggleNav", () => {
-      console.log("received");
-      this.active = !this.active;
-    });
-  }
+
+
 };
 </script>
 

@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-back">
+  <div class="bg-back ">
 <TrackCard />
 <TeamCard />
 <TeamData />
