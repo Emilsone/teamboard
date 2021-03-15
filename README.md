@@ -1,4 +1,5 @@
 # Trackee
+## [![Netlify Status](https://api.netlify.com/api/v1/badges/35af62a1-370e-4b54-bb72-35b7cfc91ba6/deploy-status)](https://app.netlify.com/sites/trackee/deploys)
 
 ## Project setup
 ```
