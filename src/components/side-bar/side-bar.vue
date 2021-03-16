@@ -95,22 +95,22 @@
             </h2>
         </div>
 
-      <router-link to="/overview"
+      <router-link to="/engineeringboard"
         ><li>
           #Development
         </li></router-link
       >
-      <router-link to="/links"
+      <router-link to="/designboard"
         ><li>
          #Design
         </li></router-link
       >
-      <router-link to="/manage"
+      <router-link to="/marketingboard"
         ><li>
          #Bussiness
         </li></router-link
       >
-      <router-link to="/personal"
+      <router-link to="/"
         ><li>
            #Management
         </li></router-link
