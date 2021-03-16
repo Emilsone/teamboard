@@ -5,14 +5,14 @@
 </div>
 <!-- <div>
 </div> -->
- <div class="flex flex-wrap " v-for="(u, index) in users" :key="index">
+  <div class="flex flex-wrap" v-for="(u, index) in users" :key="index.name">
        <div class="w-full mt-6 px-6 sm:w-1/2 xl:w-1/3 xl:mt-0 h-64">
-        <div class="flex items-center  shadow-sm rounded-md bg-white h-full text-center">
+        <div class="flex items-center  shadow-sm rounded-md bg-white h-full  ">
 
-          <div class="mx-5 md:mx-0 px-2">
+          <div class="mx-5 md:mx-0 px-8	 text-center">
+          <img :src="u.avatar" alt=""  class="object-cover w-24 h-24 mx-auto rounded-full ">
             <a href="#" class="py-3" >{{u.name}}</a>
-            <h4 class="text-xl font-semibold text-gray-700">{{u.position}}</h4>
-            <p class="text-gray-500 text-sm">A great team of digital marketers</p>
+            <h4 class="text-xl font-bold text-gray-700">{{u.position}}</h4>
           </div>
         </div>
       </div>
@@ -20,10 +20,10 @@
       <div class="w-full mt-6 px-6 sm:w-1/2 xl:w-1/3 xl:mt-0 h-64">
         <div class="flex items-center   shadow-sm rounded-md bg-white h-full">
 
-          <div class="mx-5 md:mx-0 px-2">
-           <a href="#" class="py-3" >{{u.name}}</a>
-            <h4 class="text-xl font-semibold text-gray-700">{{u.position}}</h4>
-            <p class="text-gray-500 text-sm">A great team of digital marketers</p>
+          <div class="mx-5 md:mx-0 px-8	 text-center">
+          <img :src="u.avatartwo" alt=""  class="object-cover w-24 h-24 mx-auto rounded-full ">
+           <a href="#" class="py-3" >{{u.nametwo}}</a>
+            <h4 class="text-xl font-bold text-gray-700">{{u.positiontwo}}</h4>
           </div>
         </div>
       </div>
@@ -31,15 +31,14 @@
        <div class="w-full mt-6 px-6 sm:w-1/2 xl:w-1/3 xl:mt-0 h-64">
         <div class="flex items-center  shadow-sm rounded-md bg-white h-full">
 
-          <div class="mx-5 md:mx-0 px-2">
-             <a href="#" class="py-3" >{{u.name}}</a>
-            <h4 class="text-xl font-semibold text-gray-700">{{u.position}}</h4>
-            <p class="text-gray-500 text-sm">A great team of digital marketers</p>
+          <div class="mx-5 md:mx-0 px-8	 text-center">
+            <img :src="u.avatarthree" alt=""  class="object-cover w-24 h-24 mx-auto rounded-full ">    
+             <a href="#" class="py-3" >{{u.namethree}}</a>
+            <h4 class="text-xl font-bold text-gray-700 xl:px-8">{{u.positionthree}}</h4>
           </div>
         </div>
       </div>
     </div>
-
 
 
    </section>
@@ -51,11 +50,18 @@ export default {
   data() {
     return {
       users: [
-        {
-          name: "Joe Hanson",
-          position: "Cheif Executive Officer",
-          image:
-            "http://s8.pdfconvertonline.com/convert/p3r68-cdx67/tp7z8-5t6ya.png"
+        {name: "James Moses",
+          nametwo: "John Lucas",
+          namethree: "Clara David",
+          position: "Senior Product Designer",
+          positiontwo: "Senior Graphics Designer",
+          positionthree: "Senior Motion Designer ",
+          avatar:
+            "/img6.png",
+          avatartwo:
+            "/img5.png",
+           avatarthree:
+            "/img4.png"
         }
       ]
     };

@@ -25,6 +25,7 @@ export default {
 
 <style scoped>
 .bg-back{
-background:#F0F4F6
+background:#F0F4F6,
+
 }
 </style>
