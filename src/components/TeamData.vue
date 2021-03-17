@@ -122,7 +122,7 @@ export default {
           th: " 3:45 of 6h",
           hr: "$80.00",
           income: "$80.00",
-          image: 'http://s8.pdfconvertonline.com/convert/p3r68-cdx67/tp7z8-5t6ya.png',
+          image: "/user/tom.png",
           
         },
         {
@@ -132,7 +132,7 @@ export default {
           th: " 3:45 of 6h",
           hr: "$80.00",
           income: "$80.00",
-          image: 'http://s8.pdfconvertonline.com/convert/p3r68-cdx67/rqt66-1ml9x.png',
+          image: '/user/edidiong.png',
         },
         {
           name: "Umaru Usman",
@@ -141,7 +141,7 @@ export default {
           th: " 3:45 of 6h",
           hr: "$80.00",
           income: "$80.00",
-          image: 'http://s8.pdfconvertonline.com/convert/p3r68-cdx67/a7tti-0z0xw.png',
+          image: '/user/umaru.png',
         },
         {
           name: "Mabel Udom",
@@ -150,7 +150,7 @@ export default {
           th: " 3:45 of 6h",
           hr: "$80.00",
           income: "$80.00",
-          image: 'http://s8.pdfconvertonline.com/convert/p3r68-cdx67/2nq3q-b3pyl.png',
+          image: '/user/shade.png',
         }
       ],
     

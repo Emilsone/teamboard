@@ -2,7 +2,7 @@
 	<section>
 
  <div class="flex flex-wrap">
-      <div class="w-full px-6 sm:w-1/2 xl:w-2/3 h-full md:h-64 ">
+      <div class="w-full px-6 sm:w-1/2 xl:w-2/3 h-screen md:h-64 ">
         <div class="flex flex-wrap items-center px-4  shadow-sm rounded-md bg-white h-full">
           <div class="mx-5 md:mx-0 py-0  ">
 			<a href="#" class="bg-gray-200 py-4 px-6 font-bold text-md md:">Upgrade your account </a>
@@ -18,12 +18,12 @@
      
 
       <div class="w-full mt-6 px-6 sm:w-1/2 xl:w-1/3 xl:mt-0 h-64">
-        <div class="flex items-center  shadow-sm rounded-md bg-white h-full">
+        <div class="flex items-center  shadow-sm rounded-md bg-white h-full ">
 
-          <!-- <div class="mx-5 md:mx-0"> -->
+          <!-- <div class=" md:mx-0"> -->
            <PieChart
-            style="width:60%"
-            class="mx-12"
+            style="width:55%"
+            class="mx-auto"
 			:chartdata="dataCollection"
 			:options="chartOptions"
       />

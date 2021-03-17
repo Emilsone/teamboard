@@ -6,6 +6,6 @@
 
 <script>
 export default {
-  name: "Manage",
+  name: "ActiveTask",
 };
 </script>

@@ -10,16 +10,20 @@
          <router-view />
         </div>
       </main>
+      <footer>
+      <Footer />
+	</footer>
     </div>
   </div>
 </template>
 
 <script>
 import Nav from "./nav/nav.vue"
+import Footer from "@/components/Footer.vue"
 import SideBar from "./side-bar/side-bar.vue";
 export default {
   name: "Dashboard",
-  components: { SideBar, Nav },
+  components: { SideBar, Nav,Footer },
 };
 </script>
 

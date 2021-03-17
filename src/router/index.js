@@ -1,7 +1,7 @@
 import Vue from "vue";
 import Router from "vue-router";
 import TeamPage from "@/components/teams-page/TeamPage.vue";
-import Manage from "@/components/manage";
+import ActiveTask from "@/components/ActiveTask";
 import Personal from "@/components/personal";
 import Overview from "@/components/overview";
 
@@ -18,9 +18,9 @@ export default new Router({
         },
 
         {
-            path: "/manage",
-            name: "Manage",
-            component: Manage,
+            path: "/activetask",
+            name: "ActiveTask",
+            component: ActiveTask,
         },
         {
             path: "/personal",
