@@ -90,7 +90,7 @@
       
 
        <div class="p-6">
-            <h2 class="font-semibold py-2 mt-5   text-white  flex items-center space-between">
+            <h2 class="font-semibold py-2 mt-5 text-white  flex items-center space-between">
                <span class="mr-5">Categories </span> <i class="fa fa-plus ml-12"></i> 
             </h2>
         </div>
@@ -145,7 +145,7 @@ li {
 }
 
 a {
-  padding: 18px 0px;
+  padding: 15px 0px;
   display: block;
   text-decoration: none;
   color: white;
@@ -156,6 +156,6 @@ a:hover {
   background-color: #1947ee;
 }
 .bg-color {
-  background-color: #001df5;
+  background-color:#0D2CCD;
 }
 </style>

@@ -4,7 +4,7 @@
   >
     <div class="flex items-center">
       <button
-        
+         @click="isOpen = true"
         class="text-gray-500 focus:outline-none lg:hidden"
       >
         <svg
@@ -67,24 +67,25 @@
 
       <div class="relative">
         <button
-         
+          @click="dropdownOpen = !dropdownOpen"
           class="relative z-10 block h-8 w-8 rounded-full overflow-hidden shadow focus:outline-none"
         >
           <img
             class="h-full w-full object-cover "
-            src="@/assets/user/ben.png"
+            src="/user/ben.png"
             alt="Your avatar"
           />
         </button>
 
         <div
-       
+        v-show="dropdownOpen"
+          @click="dropdownOpen = false"
           class="fixed inset-0 h-full w-full z-10"
         ></div>
 
         <div
-         
-          class="hidden absolute right-0 mt-2 py-2 w-48 bg-white rounded-md shadow-xl z-20"
+          v-show="dropdownOpen"
+          class=" absolute right-0 mt-2 py-2 w-48 bg-white rounded-md shadow-xl z-20"
         >
           <a
             href="#"
