@@ -1,7 +1,5 @@
 <template>
-  <div>Active task Page</div>
 
-  
 </template>
 
 <script>

@@ -23,7 +23,7 @@
         </svg>
       </button>
 		<div class="px-2 md:px-4">
-		<h1>Welcome, <br> <span class="font-bold text-xl">Tracking Dashboard</span>  </h1>
+		<h1>Welcome To <br> <span class="font-bold text-xl">Trackee Dashboard</span>  </h1>
 		</div>
       
     </div>
